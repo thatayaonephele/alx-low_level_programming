@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#define V_P void *
 /**
  * struct listint_s - A singly linked list
  * @n: The integer
@@ -34,4 +35,7 @@ listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
+size_t print_listint_safe(const listint_t *head);
+size_t _list_len(const listint_t *head);
+
 #endif /*LISTS_H*/
