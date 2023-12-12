@@ -9,7 +9,7 @@ size_t listint_len(const listint_t *head)
 	size_t my_node = 1;
 	const listint_t *animal_1, *animal_2;
 
-	if (head->next != NULL || head != NULL)
+	if (head != NULL || head->next != NULL)
 	{
 		animal_2 = head->next;
 		animal_1 = (head->next)->next;
