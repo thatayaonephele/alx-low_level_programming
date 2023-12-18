@@ -25,12 +25,8 @@ int create_file(const char *filename, char *text_content)
 	x = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600); /*piping of flags*/
 	y = write(x, text_content, z); /*write nbytes */
 
-	if (y  == -1) /*test if writing was successful*/
+	if (x == -1 || y  == -1) /*test if open& writing was successful*/
 		return (-1);
-
-	if (x == -1) /*test if open was successful*/
-		return (-1);
-
 	close(x); /*After writing contents close file*/
 	return (1);
 }
