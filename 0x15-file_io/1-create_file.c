@@ -16,7 +16,7 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL) /*test if name of file exists*/
 		return (-1);
 
-	if (text_content != NULL) /*test if contents being written exists*/ {
+	if (text_content != NULL) /*test if contents being written exists*/
 		while (text_content[z])
 			z++; /*inc cnt as long as text at loop var exists*/
 	}
