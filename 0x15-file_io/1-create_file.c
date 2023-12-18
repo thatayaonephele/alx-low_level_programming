@@ -11,14 +11,13 @@ int create_file(const char *filename, char *text_content)
 {
 	int x; /*opening var*/
 	int y; /*writing var*/
-	int z; /*size count loop var*/
+	int z = 0; /*size count loop var*/
 
 	if (filename == NULL) /*test if name of file exists*/
 		return (-1);
 
-	if (text_content != NULL) /*test if contents being written exists*/
-	{
-		for (; text_content[z];)
+	if (text_content != NULL) /*test if contents being written exists*/ {
+		while (text_content[z])
 			z++; /*inc cnt as long as text at loop var exists*/
 	}
 
