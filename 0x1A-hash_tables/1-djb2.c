@@ -1,5 +1,5 @@
 /**
- *hash_dj2 - A function that implements the djb2 algorithm.
+ *hash_djb2 - A function that implements the djb2 algorithm.
  *@str: string used to generate hash value
  *
  *Return: A hash number as positive long integer
